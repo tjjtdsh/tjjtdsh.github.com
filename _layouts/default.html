@@ -84,7 +84,7 @@
           <a class="brand" href="http://tjjtdsh.github.com/">King's Blog</a>
           <div class="nav-collapse">
             <ul class="nav pull-right">
-              <li><a href="/">Home</a></li>
+				<li><a href="/">Home</a></li>
             </ul>
             <!-- form method="get" action="http://www.google.com/search" class="navbar-search pull-right">
               <input type="text" name="q" class="span2 search-query" placeholder="Search" maxlength="255" value="">
@@ -107,7 +107,10 @@
             {{ content }}
           </div>
           <nav class="span3">
-            <h3>Recent Posts</h3>
+            <div class="share" style="border-color:#111111">
+				
+			</div> 
+	    <h3>Recent Posts</h3>
             <hr />
             <div id="posts">
               {% for post in site.posts limit:10%}
